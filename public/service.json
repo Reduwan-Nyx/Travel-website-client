@@ -1,0 +1,31 @@
+[
+    {
+        "id":1, 
+        
+        "name":"Australia", "description": "Australia, officially the Commonwealth of Australia, is a sovereign country comprising the mainland", "price": " 1420" ,"img": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXVzdHJhbGlhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":2, 
+        
+        "name":"Bangladesh", "description": "Bangladesh, to the east of India on the Bay of Bengal, is a South Asian country marked by lush green","price": " 1620", "img": "https://images.unsplash.com/photo-1562793171-b7fa2e3369d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIzfHxiYW5nbGFkZXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":3,
+        
+        "name":"Egypt", "description": "Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs",  "price": " 2310",  "img": "https://images.unsplash.com/photo-1594311526185-cdd502eb5d04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGVneXB0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":4,
+        
+        "name":"Japan", "description": "Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on t",  "price": " 2680", "img": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" }, 
+        
+        {
+        "id":5,
+        
+        "name":"Medina", "description": "Medina is a city in western Saudi Arabia. In the city center, the vast Al-Masjid an-Nabawi (Prophet'",  "price": "1520", "img": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWVkaW5hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" }, 
+        
+        {
+        "id":6,
+        
+        "name":"Switzerland", "description": "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high",  "price": "2830", "img": "https://images.unsplash.com/photo-1594069758873-e79e9075eb7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3dpdHplcmxhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" }
+]
