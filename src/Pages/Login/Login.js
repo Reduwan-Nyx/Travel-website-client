@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import "./Login.css";
 import auth from "./Firebase/firebase.init";
@@ -24,6 +24,10 @@ const Login = () => {
 
   let errorMessage 
 
+  let navigate = useNavigate();
+  let location = useLocation();
+  let from = location.state?.from?.pathname || "/home";
+
   if(error || gError){
     errorMessage = <p className="text-red-500">{error?.message || gError?.message}</p>
   }
@@ -33,8 +37,8 @@ const Login = () => {
   }
 
 
-  if (user) {
-    console.log(user);
+  if (user || gUser) {
+    navigate(from, { replace: true });
   }
 
 
@@ -129,7 +133,7 @@ const Login = () => {
                   
           <p>
             <small className="font-bold">
-              New To Doctors Portal{" "}
+              New To Just Go ?{" "}
               <Link className="button mx-2" to="/signup">
                 Create New Account
               </Link>
