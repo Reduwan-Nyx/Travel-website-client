@@ -1,16 +1,22 @@
-import useServices from "../../Hooks/useServices";
+import { useEffect } from "react";
+import { useState } from "react";
 import Service from "../Service/Service";
 
-
 const Services = () => {
-   const [services] = useServices()
+   const [services, setService] = useState([])
+
+   useEffect(()=>{
+    fetch("http://localhost:5000/services")
+    .then(res => res.json())
+    .then(data => setService(data))
+   },[])
     return (
         <div>
             <h1 className='text-center text-4xl font-bold text-gray-800 mb-24'>SERVICES</h1>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-3/4 mx-auto'>
                 {
                     services.map(service => <Service 
-                    key={service.id}
+                    key={service._id}
                     service={service}
                     ></Service>)
                 }

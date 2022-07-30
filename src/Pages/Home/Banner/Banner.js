@@ -1,5 +1,6 @@
 import React from 'react';
 import hero from './hero-5.png'
+import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <section className='text-gray-600 body-font banner'>
@@ -8,7 +9,7 @@ const Banner = () => {
                     <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>It's a Big World Out <br className='hidden lg:inline-block' />There Go Explore</h1>
                     <p className='mb-8 leading-relaxed text-lg font-medium'>Travel makes you realize that no matter how much you know, there’s always more to learn... Travel makes you realize that no matter how much you know, there’s always more to learn...</p>
                     <div className='flex justify-center'>
-                        <button className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus-outline-none hover:bg-green-600 rounded text-lg'>Get Started</button>
+                        <Link to={"/services"}><button className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus-outline-none hover:bg-green-600 rounded text-lg'>Get Started</button></Link>
                         <button className='ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg'>Learn More</button>
                     </div>
                 </div>

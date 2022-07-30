@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const {id, img, price, name, description} = props.service;
+    const {_id, img, price, name, description} = props.service;
    
     return (
         <div className='max-w-lg mx-auto'>
@@ -22,7 +22,7 @@ const Service = (props) => {
           <h5 className="text-gray-900 font-bold text-2xl tracking-tight mb-2">
               $ {price}
             </h5>
-            <Link to={``}>
+            <Link to={`/booking/${_id}`}>
             <button
               className="text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
               href="#"
