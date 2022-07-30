@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useServices = () => {
-    const [services, setServices] = useState([])
+  const [services, setServices] = useState([]);
 
-    useEffect(()=>{
-        fetch("http://localhost:5000/services")
-        .then(res => res.json())
-        .then(data => setServices(data))
-    },[])
-    return [services, setServices]
+  useEffect(() => {
+    fetch("https://mighty-citadel-89364.herokuapp.com/services")
+      .then((res) => res.json())
+      .then((data) => setServices(data));
+  }, []);
+  return [services, setServices];
 };
 
 export default useServices;
